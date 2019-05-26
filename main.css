@@ -29,7 +29,7 @@ html, body {
 .btn {
     border: none; 
     border-radius: 2px;
-    padding: 5px 5px; /* Some padding */
+    padding: 5px 5px; 
     font-size: 10px;   
     cursor:pointer;
 }
@@ -124,7 +124,7 @@ html, body {
     background-color: #0073b1;
     border: none; 
     border-radius: 50px;
-    padding: 5px 8px; /* Some padding */
+    padding: 5px 8px; 
     font-size: 15px;   
     cursor:pointer;
 }
@@ -135,7 +135,7 @@ html, body {
     background-color: #44475a;
     border-color: black;
     border-radius: 50px;
-    padding: 5px 8px; /* Some padding */
+    padding: 5px 8px; 
     font-size: 15px;   
     cursor:pointer;
 }
@@ -150,19 +150,15 @@ html, body {
 
 .reddit {
     flex-basis: 20%;
-    
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow: auto;
-    
-    
 }
 .section-one::-webkit-scrollbar { 
     opacity:0;  width:0px
 }
 .title {
-    
     flex-basis: 10%;
     font-size: 15px;
     padding-top: 40px;
@@ -170,14 +166,11 @@ html, body {
     height: 100%;
     width: 100%;
     text-align: center;
-    
 }
 .news-feed {
-    
     flex-basis: 90%;
     width: 100%;
     height: 100%;
-    
 }
 .fa-reddit-alien,
 .fa-clock,
@@ -196,6 +189,10 @@ html, body {
     border-left-style: solid;
     border-color: #44475a;
     padding-left: 10px;
+
+}
+.news-feed-styling:hover {
+    border-color: #50fa7b;
 }
 .user {
     color: #f1fa8c;
@@ -233,7 +230,16 @@ html, body {
     background-color: blueviolet;
     flex-basis: 45%;
     width: 100%;
-    text-align: center;
+}
+.js-history-styling {
+    
+}
+.js-history-content {
+    
+}
+.js-history-time {
+    color: black;
+    text-align: right;
 }
 .time {
     background-color: lightgreen;
