@@ -186,8 +186,35 @@
                         <i class="far fa-clock"></i>
                         <span class="title-text">RELEVANT JAVASCRIPT HISTORY</span>
                     </div>
-                    <div class="js-history">3.2</div>
-                    <div class="time">3.3</div>
+                    <div class="js-history">3.2
+                        <div class="js-history-styling">
+                            <!-- icon w3 ou freecodecamp-->
+                            <p id="history0" class="js-history-content"></p>
+                            <script>document.getElementById("history0").innerHTML =obj2.mockup2[0].history;</script>
+
+                            <p id="time0" class="js-history-time"></p>
+                            <script>document.getElementById("time0").innerHTML =obj2.mockup2[0].time;</script>
+
+                        </div>
+
+
+
+
+
+                    </div>
+                    <div class="time">
+                        <div class="hm">
+                            <script>document.getElementsByClassName("hm")[0].innerHTML = currentTime;</script>
+                            
+                        </div>
+                        <div class="ampm">
+                            <script>document.getElementsByClassName("ampm")[0].innerHTML = ampm;</script>
+                        </div>
+                        
+                                   
+                        
+
+                    </div>
             </div>
             <div class="github">
                     <div class="title">

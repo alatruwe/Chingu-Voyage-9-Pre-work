@@ -155,7 +155,7 @@ html, body {
     align-items: center;
     overflow: auto;
 }
-.section-one::-webkit-scrollbar { 
+::-webkit-scrollbar { 
     opacity:0;  width:0px
 }
 .title {
@@ -220,16 +220,21 @@ html, body {
 .js {
     flex-basis: 55%;
     
-    background: steelblue;
+    
     display: flex;
     flex-direction: column;
     
 
 }
 .js-history {
-    background-color: blueviolet;
+    
     flex-basis: 45%;
     width: 100%;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: #44475a;
+    overflow: auto;
+
 }
 .js-history-styling {
     
@@ -242,12 +247,35 @@ html, body {
     text-align: right;
 }
 .time {
-    background-color: lightgreen;
+    
     flex-basis: 45%;
     width: 100%;
-    width: 100%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-top: 25px;
+    font-family: "Helvetica Neue";
+
 }
+.hm {
+    
+    font-size: 120px;
+    font-weight: 400;
+    color: #6272a4;
+    
+    
+}
+
+.ampm {
+    
+   
+    font-size: 32px;
+    font-weight: 400;
+    color: #6272a4;
+    
+}
+
+
 
 
 .github {
