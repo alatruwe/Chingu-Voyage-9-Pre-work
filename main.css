@@ -10,14 +10,12 @@ html, body {
     font-family: 'Inconsolata', monospace;
 }
 
-
 .sidebar {
     flex-basis: 15%;
     background: orangered;
     display: flex;
     flex-direction: column;
 }
-
 .nav-top {
     background: #44475a;
     flex-basis: 90%;
@@ -107,7 +105,6 @@ html, body {
     justify-content: center;
 }
 .initab {
-   
     flex-basis: 50%;
     width: 100%;
     text-align: center;
@@ -158,14 +155,15 @@ html, body {
 ::-webkit-scrollbar { 
     opacity:0;  width:0px
 }
-.title {
+.title-reddit {
     flex-basis: 10%;
     font-size: 15px;
-    padding-top: 40px;
+    padding-top: 25px;
     padding-bottom: 30px;
     height: 100%;
     width: 100%;
     text-align: center;
+    color: #66d9ef;
 }
 .news-feed {
     flex-basis: 90%;
@@ -177,11 +175,6 @@ html, body {
 .fa-github-alt {
     color: #66d9ef;
 }
-
-.title-text {
-    color: #66d9ef;  
-}
-
 .news-feed-styling {
     margin-left: 20px;
     margin-bottom: 40px;
@@ -189,7 +182,6 @@ html, body {
     border-left-style: solid;
     border-color: #44475a;
     padding-left: 10px;
-
 }
 .news-feed-styling:hover {
     border-color: #50fa7b;
@@ -203,7 +195,6 @@ html, body {
     line-height: 18px;
     margin-bottom: 4px;
     color: #f8f8f2;
-    
 }
 .posted-by {
     color: #66d9ef;
@@ -211,92 +202,207 @@ html, body {
 }
 .link-to-comments {
     color: #ff79c6;
-    
 }
-
-
 
 
 .js {
-    flex-basis: 55%;
-    
-    
+    flex-basis: 45%;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    
-
+}
+.js-content {
+    flex-basis: 55%;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+.title-js {
+    flex-basis: 10%;
+    font-size: 15px;
+    padding-top: 25px;
+    margin-bottom: 20px;
+    padding-right: 15px;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+    height: 100%;
+    width: 100%;
+    color: #66d9ef;
 }
 .js-history {
-    
-    flex-basis: 45%;
+    flex-basis: 90%;
+    height: 100%;
     width: 100%;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-color: #44475a;
-    overflow: auto;
-
+    margin-left: 15px;
 }
 .js-history-styling {
-    
+    display: flex;
+    margin-top: 15px;
+}
+.w3-icon {
+    border-color: #50fa7b;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border-width: 1px;
+    border-style: solid;
+    margin-right: 5px; 
 }
 .js-history-content {
-    
+    flex-grow: 2;
+    color: #6272a4;
+    font-size: 14px;
+    font-weight: 100;
+    cursor: pointer;
+}
+.js-history-content:hover {
+    color: #f1fa8c;
 }
 .js-history-time {
-    color: black;
-    text-align: right;
+    flex-grow:1;
+    color: #999;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 15px;  
 }
 .time {
-    
     flex-basis: 45%;
     width: 100%;
+    justify-content: center;
+    font-family: "Helvetica Neue";
+    color: #6272a4;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-color: #44475a;
+    display: flex;
+    flex-direction: column;   
+}
+.time-content {
     display: flex;
     justify-content: center;
     align-items: baseline;
-    margin-top: 25px;
-    font-family: "Helvetica Neue";
-
 }
 .hm {
-    
     font-size: 120px;
-    font-weight: 400;
-    color: #6272a4;
-    
-    
+    font-weight: 400;    
 }
-
 .ampm {
-    
-   
     font-size: 32px;
-    font-weight: 400;
-    color: #6272a4;
-    
+    font-weight: 400;  
 }
-
-
-
+.date-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-weight: 200;
+    font-size: 20px;
+}
 
 .github {
     flex-basis: 20%;
-    background: orange;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    
+}
+.github-content {
+    flex-basis: 90%;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+.title-github {
+    flex-basis: 10%;
+    font-size: 15px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    width: 100%;
+    color: #66d9ef;
+}
+.title-github-styling {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.title-text-github {
+    margin-left: 5px;
+}
+.gitlab-link {
+    color: #6272a4;
+    font-size: 12px;
+    font-weight: 100;
+    cursor: pointer;
+    text-decoration: none;
+}
+.gitlab-link:hover {
+    color: #f1fa8c;
 }
 .github-issues {
-    background-color: brown;
-    flex-basis: 75%;
+    flex-basis: 80%;
     width: 100%;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.issues-title {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-bottom: 15px;
+}
+.issues {
+    color: #f1fa8c;
+    padding-right: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fa-sort-up {
+    color: #f1fa8c;
+}
+.pull {
+    color: #ff79c6;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.pull:hover {
+    color: #50fa7b;
+}
+.issues-content {
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+.issues-content-styling {
+    margin-left: 20px;
+    margin-bottom: 40px;
+    border-left-width: 3px;
+    border-left-style: solid;
+    border-color: #44475a;
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: 100;
+}
+.repo {
+    color: #6272a4;
+    cursor: pointer;
+}
+.issue {
+    color: #f1fa8c;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 .ad {
-    background-color: aqua;
-    flex-basis: 15%;
+    margin-top: 30px;
+    margin-left: 40px;
+    flex-basis: 10%;
     width: 100%;
-    text-align: center;
 }
-
-
+.ad-image {
+    width: 98px;
+    height: 75px;
+    float: left;
+    margin: 10px;
+}
 
